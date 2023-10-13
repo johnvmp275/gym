@@ -5,7 +5,9 @@ const aboutLink = document.getElementById('aboutLink');
 // Função para carregar a página inicial
 function loadHomePage() {
     container.innerHTML = `
-    <h1> qeqergqer </h1>
+  <section class="">
+  <h1>eqwdqwdqwdqwdqwdqwdqwr </h1>
+  </section>
     `;
 }
 
