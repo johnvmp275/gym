@@ -28,16 +28,17 @@ ul {
 }
 
 .menu {
-    grid-column: 3/5;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1/5;
+    padding: 4rem;
     background: var(--box--amarelo);
 }
 
 .menu ul {
-    align-items: center;
     display: flex;
-    flex-wrap: wrap;
     padding: 10px;
     gap: 10px;
 }
@@ -49,7 +50,7 @@ ul {
     font-family: var(--font--family);
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.875rem;
+    font-size: 0.950rem;
     letter-spacing: .1em;
 }
 
@@ -74,6 +75,8 @@ h1{
     background: var(--box--amarelo)
 }
 
-img{
+.icon{
     width: 87px;
+    cursor: pointer;
+    display: flex;
 }
