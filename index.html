@@ -12,22 +12,24 @@
 
 <body>
     <div class="grid-container">
-        <nav class="menu" data-menu="suave">
-            <a><img class="icon" src="img/gold_s_gym_2008-logo-5B7A8ECB44-seeklogo 1.png" alt="" srcset=""></a>
-            <ul>
-                <li><a class="link" id="homeLink" href="">Home</a></li>
-                <li><a class="link" id="aboutLink" href="">About</a></li>
-                <li><a class="link" id="programsLink" href="">Workout Programs</a></li>
-                <li><a class="link" id="recipesLink" href="">Recipes</a></li>
-                <li><a class="link" id="storeLink" href="">Store</a></li>
-                <li><a class="link" href="#">Login</a></li>
-                <li><a class="link" href="#">Sign up</a></li>
-            </ul>
-        </nav>
-        <!-- fazer o loader fora para dar display none na div container -->
-        <div id="container" class="grid-section">
-
+        <div class="nav-container">
+            <nav class="menu">
+                <a><img class="icon" src="img/gold_s_gym_2008-logo-5B7A8ECB44-seeklogo 1.png" alt="" srcset=""></a>
+                <ul>
+                    <li><a class="link" id="homeLink" href="">Home</a></li>
+                    <li><a class="link" id="aboutLink" href="">About</a></li>
+                    <li><a class="link" id="programsLink" href="">Workout Programs</a></li>
+                    <li><a class="link" id="recipesLink" href="">Recipes</a></li>
+                    <li><a class="link" id="storeLink" href="">Store</a></li>
+                    <li><a class="link" href="#">Login</a></li>
+                    <li><a class="link" href="#">Sign up</a></li>
+                </ul>
+            </nav>
         </div>
+        <!-- fazer o loader fora para dar display none na div container -->
+        <main id="container" class="grid-section">
+
+        </main>
         <footer class="copy">
             <a><img class="icon icon-copy" src="img/gold_s_gym_2008-logo-5B7A8ECB44-seeklogo 1.png" alt=""
                     srcset=""></a>
@@ -36,6 +38,13 @@
                 utfsfbhsrherfhsbfshb. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et</p>
         </footer>
+    </div>
+    <div class="loader">
+        <div data-animacao="loader">
+            <img src="./img/gold_s_gym_2008-logo-5B7A8ECB44-seeklogo 1.png" alt="" class="main_anim">
+            <img src="./img/gold_s_gym_2008-logo-5B7A8ECB44-seeklogo 1.png" alt="" class="anim1">
+            <img src="./img/gold_s_gym_2008-logo-5B7A8ECB44-seeklogo 1.png" alt="" class="anim2">
+        </div>
     </div>
     <script type="module" src="./js/script.js"></script>
     <script type="" src="./js/loadPage.js"></script>

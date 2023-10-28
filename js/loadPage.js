@@ -1,15 +1,29 @@
-const container = document.getElementById("container");
-const homeLink = document.getElementById("homeLink");
-const aboutLink = document.getElementById("aboutLink");
-const programsLink = document.getElementById("programsLink");
-const recipesLink = document.getElementById("recipesLink");
-const storeLink = document.getElementById("storeLink");
+const gridContainer = document.querySelector('.grid-container')
+const container = document.getElementById('container');
+const homeLink = document.getElementById('homeLink');
+const aboutLink = document.getElementById('aboutLink');
+const programsLink = document.getElementById('programsLink');
+const recipesLink = document.getElementById('recipesLink');
+const storeLink = document.getElementById('storeLink');
+const loader = document.querySelector('.loader');
 
 // Função para carregar a página inicial
 function loadHomePage() {
   container.innerHTML = `
-  <section class="cont">
-       <h1>loadHomePage </h1>
+       <section class="banner">
+       <div>
+       <p class="title">make your 
+       <span class="title_bold">BODY SHAPE</span></p>
+       <p>Being physically active can improve your brain health, 
+       help manage weight, reduce the risk of disease, strengthen bones and muscles, 
+       and improve your ability to do everyday activities. Adults who si</p>
+       <button class="btn_banner" type="submit">Get Started</button>
+       </div>
+       <div>
+       <img class"banner_home" src="./img/risen.png">
+       </div>
+       </section>
+       <section class="banner">
        </section>
     `;
 }
@@ -39,51 +53,50 @@ function loadStorePage() {
     `;
 }
 
+//simula um loader de 5s para poder apresentar o site
+loaderTimer();
 // Carrega a página inicial quando a aplicação inicia
 loadHomePage();
 
-// Define eventos de clique para os links
-homeLink.addEventListener("click", function (event) {
+//
+function loaderTimer() {
+  gridContainer.style.display = 'none';
+  loader.style.display = 'flex';
   setTimeout(() => {
     // colocar como display block aqui para que apareça
-  }, 5000);
-  ///quando ele acabar ficara como display none para sair o loader
+    loader.style.display = 'none';
+    gridContainer.style.display = 'block';
+    //quando ele acabar ficara como display none para sair o loader
+  }, 3000);
+
+}
+
+// Define eventos de clique para os links
+homeLink.addEventListener('click', function (event) {
+  loaderTimer();
   event.preventDefault(); // Evita que o link redirecione
   loadHomePage();
 });
 
-aboutLink.addEventListener("click", function (event) {
-  setTimeout(() => {
-    // colocar como display block aqui para que apareça
-  }, 5000);
-  ///quando ele acabar ficara como display none para sair o loader
+aboutLink.addEventListener('click', function (event) {
+  loaderTimer();
   event.preventDefault();
   loadAboutPage();
 });
 
-programsLink.addEventListener("click", function (event) {
-  setTimeout(() => {
-    // colocar como display block aqui para que apareça
-  }, 5000);
-  ///quando ele acabar ficara como display none para sair o loader
+programsLink.addEventListener('click', function (event) {
+  loaderTimer();
   event.preventDefault();
   loadProgramsPage();
 });
 
-recipesLink.addEventListener("click", function (event) {
-  setTimeout(() => {
-    // colocar como display block aqui para que apareça
-  }, 5000);
-  ///quando ele acabar ficara como display none para sair o loader
+recipesLink.addEventListener('click', function (event) {
+  loaderTimer()
   event.preventDefault();
   loadRecipesPage();
 });
 
-storeLink.addEventListener("click", function (event) {
-  setTimeout(() => {
-    // colocar como display block aqui para que apareça
-  }, 5000);
-  ///quando ele acabar ficara como display none para sair o loader
-  event.preventDefault();
+storeLink.addEventListener('click', function (event) {
+  loaderTimer()
   loadStorePage();
 });

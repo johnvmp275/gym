@@ -7,6 +7,7 @@
 :root {
   --cor--preto: #000000;
   --cor--branco: #ffffff;
+  --cor--amarelo: #FFED00;
   --font--family: "Outfit", sans-serif;
 }
 
@@ -15,13 +16,20 @@ body {
   background: var(--cor--preto);
 }
 
+p,
+a {
+  font-family: var(--font--family);
+}
+
 .grid-container {
+  max-width: 1400px;
+  margin: 0 auto;
   background: var(--background--color);
   color: var(--color--text);
   -webkit-font-smoothing: antialiased;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
+
+.nav-container {}
 
 ul {
   list-style: none;
@@ -31,26 +39,24 @@ ul {
   justify-content: space-between;
   align-items: center;
   display: flex;
-  flex-wrap: wrap;
-  grid-column: 1/5;
-  padding: 4rem;
+  padding: 4rem 1rem 4rem 1rem;
+
   background: var(--box--amarelo);
 }
 
 .menu ul {
   display: flex;
   padding: 10px;
-  gap: 10px;
+  gap: 20px;
 }
 
 .menu li a {
   display: block;
   padding: 10px;
   color: var(--cor--branco);
-  font-family: var(--font--family);
   text-decoration: none;
   font-weight: bold;
-  font-size: 0.95rem;
+  font-size: 18px;
   letter-spacing: 0.1em;
 }
 
@@ -58,16 +64,54 @@ h1 {
   color: #ffffff;
 }
 
+.title {
+  margin-top: 55px;
+  margin-bottom: 32px;
+  font-family: var(--font--family);
+  font-weight: 300;
+  font-size: 87px;
+  max-width: 550px;
+  width: 100%;
+}
+
+.title_bold {
+  font-weight: 700;
+}
+
 .grid-section {
-  grid-column: 1/4;
   width: 100%;
   padding: 20px;
-  display: grid;
+  /* display: grid;
   box-sizing: border-box;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  margin-bottom: 4rem;
+  grid-template-columns: 1.3fr 2fr; */
+  margin-bottom: 3rem;
 }
+
+.banner {
+  justify-content: center;
+  display: flex;
+  gap: 80px;
+}
+
+.btn_banner {
+  cursor: pointer;
+  margin-top: 40px;
+  background: var(--cor--preto);
+  color: var(--cor--branco);
+  width: 200px;
+  height: 52px;
+  border-radius: 20px;
+  border: 2px solid var(--cor--amarelo);
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.btn_banner:hover {
+  background: var(--cor--amarelo);
+  color: var(--cor--preto);
+  border: none !important;
+} 
 
 .copy {
   grid-column: 2/3;

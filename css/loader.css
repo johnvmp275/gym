@@ -1,0 +1,42 @@
+.loader {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[data-animacao="loader"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.anim1,
+.anim2 {
+    position: absolute;
+}
+
+.anim1 {
+    position: absolute;
+    animation: animLogo infinite 1s;
+}
+
+.anim2 {
+    position: absolute;
+    animation: animLogo infinite 1s 300ms;
+}
+
+
+@keyframes animLogo {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
