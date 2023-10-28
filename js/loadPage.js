@@ -91,12 +91,13 @@ programsLink.addEventListener('click', function (event) {
 });
 
 recipesLink.addEventListener('click', function (event) {
-  loaderTimer()
+  loaderTimer();
   event.preventDefault();
   loadRecipesPage();
 });
 
 storeLink.addEventListener('click', function (event) {
-  loaderTimer()
+  loaderTimer();
+  event.preventDefault();
   loadStorePage();
 });
