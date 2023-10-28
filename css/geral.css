@@ -20,7 +20,7 @@ body {
   color: var(--color--text);
   -webkit-font-smoothing: antialiased;
   display: grid;
-  grid-template-columns: 1fr 120px minmax(500px, 200px) 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 ul {
@@ -59,18 +59,18 @@ h1 {
 }
 
 .grid-section {
-  grid-column: 2/4;
+  grid-column: 1/4;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   display: grid;
   box-sizing: border-box;
-  grid-template-columns: 90px 300px 1fr;
-  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
   margin-bottom: 4rem;
 }
 
 .copy {
-  grid-column: 2/4;
+  grid-column: 2/3;
   margin-bottom: 2rem;
   background: var(--box--amarelo);
   text-align: center;

@@ -8,7 +8,9 @@ const storeLink = document.getElementById("storeLink");
 // Função para carregar a página inicial
 function loadHomePage() {
   container.innerHTML = `
+  <section class="cont">
        <h1>loadHomePage </h1>
+       </section>
     `;
 }
 
