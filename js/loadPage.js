@@ -67,7 +67,7 @@ function loaderTimer() {
     loader.style.display = 'none';
     gridContainer.style.display = 'block';
     //quando ele acabar ficara como display none para sair o loader
-  }, 3000);
+  }, 1700);
 
 }
 
