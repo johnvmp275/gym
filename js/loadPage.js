@@ -19,9 +19,7 @@ function loadHomePage() {
        and improve your ability to do everyday activities. Adults who si</p>
        <button class="btn_banner" type="submit">Get Started</button>
        </div>
-       <div>
        <img class="banner_home" src="./img/risen.png">
-       </div>
        </section>
        <section class="banner">
        </section>
