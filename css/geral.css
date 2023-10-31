@@ -69,7 +69,7 @@ h1 {
   margin-bottom: 32px;
   font-family: var(--font--family);
   font-weight: 300;
-  font-size: 87px;
+  font-size: 5rem;
   max-width: 550px;
   width: 100%;
 }
@@ -92,6 +92,11 @@ h1 {
   display: flex;
   gap: 80px;
 }
+
+.banner_home{
+  width: 100%;
+}
+
 
 .btn_banner {
   cursor: pointer;
@@ -152,4 +157,16 @@ h1 {
 .link:hover::after {
   width: 100%;
   transform: translateX(0%);
+}
+
+@media(max-width: 1200px) {
+  .menu ul{
+    display: none;
+  }
+  .banner{
+    flex-direction: column-reverse;
+  }
+  .title{
+    font-size: 3.6rem;
+  }
 }

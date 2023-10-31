@@ -20,7 +20,7 @@ function loadHomePage() {
        <button class="btn_banner" type="submit">Get Started</button>
        </div>
        <div>
-       <img class"banner_home" src="./img/risen.png">
+       <img class="banner_home" src="./img/risen.png">
        </div>
        </section>
        <section class="banner">
