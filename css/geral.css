@@ -17,7 +17,10 @@ body {
 }
 
 p,
-a {
+a,
+h1,
+h2,
+span {
   font-family: var(--font--family);
 }
 
@@ -93,7 +96,7 @@ h1 {
   gap: 80px;
 }
 
-.banner_home{
+.banner_home {
   width: 100%;
 }
 
@@ -115,7 +118,7 @@ h1 {
   background: var(--cor--amarelo);
   color: var(--cor--preto);
   border: none !important;
-} 
+}
 
 .copy {
   grid-column: 2/3;
@@ -158,14 +161,67 @@ h1 {
   transform: translateX(0%);
 }
 
+.workoutPrograms h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.title_programs {
+  font-size: 36px;
+}
+
+.programs {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+}
+
+.hover_image {
+  overflow: hidden;
+  position: relative;
+}
+
+.black_over:hover {
+  opacity: .3;
+}
+
+.black_over {
+  transition: opacity .2s;
+  opacity: .8;
+  width: 100%;
+  max-height: 494px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: block;
+  position: absolute;
+  background-color: #000000;
+}
+
+.trainer span {
+  position: absolute;
+  display: flex;
+  top: 45%;
+  left: -70px;
+  width: 352px;
+  font-weight: bold;
+  transform: rotate(-90deg);
+  opacity: 1;
+  font-size: 32px;
+}
+
 @media(max-width: 1200px) {
-  .menu ul{
+  .menu ul {
     display: none;
   }
-  .banner{
+
+  .banner {
     flex-direction: column-reverse;
   }
-  .title{
+
+  .title {
     font-size: 3.6rem;
   }
 }

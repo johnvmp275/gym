@@ -1,3 +1,4 @@
+export default function initLoadPage() {
 const gridContainer = document.querySelector('.grid-container')
 const container = document.getElementById('container');
 const homeLink = document.getElementById('homeLink');
@@ -22,6 +23,59 @@ function loadHomePage() {
        <img class="banner_home" src="./img/risen.png">
        </section>
        <section class="banner">
+       </section>
+       <section class="workoutPrograms">
+       <h2 class="titile_programs">Free Workout Programs</h2>
+       <div class="programs">
+       <div class="trainer">
+         <div class="hover_image">
+           <img src="./img/logan.png">
+           <div class="black_over">
+           </div>
+           <span>Beginner Friendly</span>
+         </div>
+         <button class="btn_banner" type="submit">Start Today</button>
+       </div>
+       <div class="trainer">
+         <div class="hover_image">
+           <img src="./img/grup5.png">
+           <div class="black_over">
+           </div>
+           <span>Moderate to Advanced</span>
+         </div>
+         <button class="btn_banner" type="submit">Start Today</button>
+       </div>
+       <div class="trainer">
+         <div class="hover_image">
+           <img src="./img/clem.png">
+           <div class="black_over">
+           </div>
+           <span>Weight Loss</span>
+         </div>
+         <button class="btn_banner" type="submit">Start Today</button>
+       </div>
+       <div class="trainer">
+         <div class="hover_image">
+           <img src="./img/clem.png">
+           <div class="black_over">
+           </div>
+           <span>No Equipment</span>
+         </div>
+         <button class="btn_banner" type="submit">Start Today</button>
+       </div>
+       <div class="trainer">
+         <div class="hover_image">
+           <img src="./img/clem.png">
+           <div class="black_over">
+           </div>
+           <span>Strength Training</span>
+         </div>
+         <button class="btn_banner" type="submit">Start Today</button>
+       </div>
+     </div>
+
+
+     
        </section>
     `;
 }
@@ -99,3 +153,4 @@ storeLink.addEventListener('click', function (event) {
   event.preventDefault();
   loadStorePage();
 });
+}
