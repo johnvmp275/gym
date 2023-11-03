@@ -7,7 +7,7 @@
 :root {
   --cor--preto: #000000;
   --cor--branco: #ffffff;
-  --cor--amarelo: #FFED00;
+  --cor--amarelo: #ffed00;
   --font--family: "Outfit", sans-serif;
 }
 
@@ -32,7 +32,8 @@ span {
   -webkit-font-smoothing: antialiased;
 }
 
-.nav-container {}
+.nav-container {
+}
 
 ul {
   list-style: none;
@@ -171,7 +172,7 @@ h1 {
 }
 
 .programs {
-  margin: 0 auto;
+  margin: 0 auto 80px;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
@@ -184,12 +185,12 @@ h1 {
 }
 
 .black_over:hover {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .black_over {
-  transition: opacity .2s;
-  opacity: .8;
+  transition: opacity 0.2s;
+  opacity: 0.8;
   width: 100%;
   max-height: 494px;
   height: 100%;
@@ -212,7 +213,53 @@ h1 {
   font-size: 32px;
 }
 
-@media(max-width: 1200px) {
+.merch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn_view {
+  margin-top: 0;
+}
+
+.cards-merch {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-merch p {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 314px;
+}
+
+.card-hover img {
+  z-index: 10;
+  margin: 0 auto;
+  display: flex;
+  max-width: 218px;
+  height: 280px;
+  object-fit: none;
+}
+
+.card-hover {
+  position: relative;
+}
+
+.background-gray {
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  background: #3b3b3b;
+}
+
+@media (max-width: 1200px) {
   .menu ul {
     display: none;
   }
