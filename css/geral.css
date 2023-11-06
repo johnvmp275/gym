@@ -308,6 +308,7 @@ h1 {
 
 .gallery-photos img {
   width: 100%;
+  max-width: 400px;
   cursor: pointer;
   border-radius: 40px;
 }
