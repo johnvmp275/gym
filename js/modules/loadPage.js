@@ -75,7 +75,7 @@ export default function initLoadPage() {
       </div>
   </div>
 </section>
-<section class="">
+<section class="merch-container">
   <div class="merch">
       <h2>/// GET OUR MERCH</h2> <button class="btn_banner btn_view" type="submit">View All Products</button>
   </div>
@@ -92,7 +92,7 @@ export default function initLoadPage() {
       <div class="card-hover">
           <img src="./img/camiseta.png" alt="">
           <div class="background-gray">         
-          <p>Bag</p>
+          <p>Shirt</p>
           </div>
       </div>
   </div>
@@ -100,7 +100,7 @@ export default function initLoadPage() {
   <div class="card-hover">
       <img src="./img/garrafa.png" alt="">
       <div class="background-gray">
-      <p>Bag</p>
+      <p>Bottle</p>
       </div>
   </div>
 </div>
@@ -108,13 +108,69 @@ export default function initLoadPage() {
 <div class="card-hover">
     <img src="./img/camiseta.png" alt="">
     <div class="background-gray">   
-    <p>Bag</p>
+    <p>Shirt</p>
     </div>
 </div>
 </div>
   </div>
-  
 </section>
+<section class="gallery-container">
+      <h2>///Gallery</h2>
+      <div class="gallery-photos">
+      <div class="hover_image">
+          <img src="./img/bruce.png">
+          <div class="black_over">
+          <p>View more</p>
+          </div>
+  </div>
+  <div class="hover_image">
+  <img src="./img/nathan.png">
+  <div class="black_over">
+  <p>View more</p>
+  </div>
+</div>
+<div class="hover_image">
+<img src="./img/bruce.png">
+<div class="black_over">
+<p>View more</p>
+</div>
+</div>
+<div class="hover_image">
+<img src="./img/nathan.png">
+<div class="black_over">
+<p>View more</p>
+</div>
+</div>
+<div class="hover_image">
+<img src="./img/han.png">
+<div class="black_over">
+<p>View more</p>
+</div>
+</div>
+<div class="hover_image">
+<img src="./img/dollar.png">
+<div class="black_over">
+<p>View more</p>
+</div>
+</div>
+<div class="hover_image">
+<img src="./img/han.png">
+<div class="black_over">
+<p>View more</p>
+</div>
+</div>
+<div class="hover_image">
+<img src="./img/dollar.png">
+<div class="black_over">
+<p>View more</p>
+</div>
+</div>
+      </div>
+      </section>
+      <section class="merch-container">
+  <div class="merch">
+      <h2>///Recipes</h2> <button class="btn_banner btn_view" type="submit">View More Recipes</button>
+  </div>
     `;
   }
 
