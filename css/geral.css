@@ -12,6 +12,7 @@
 }
 
 body {
+  padding: 20px;
   color: var(--cor--branco);
   background: var(--cor--preto);
 }
@@ -31,7 +32,6 @@ input::placeholder {
   font-weight: 400;
 }
 
-
 .icon {
   width: 87px;
   cursor: pointer;
@@ -46,7 +46,8 @@ input::placeholder {
   -webkit-font-smoothing: antialiased;
 }
 
-.nav-container {}
+.nav-container {
+}
 
 ul {
   list-style: none;
@@ -63,7 +64,6 @@ ul {
 
 .menu ul {
   display: flex;
-  padding: 10px;
   gap: 20px;
 }
 
@@ -97,7 +97,6 @@ h1 {
 
 .grid-section {
   width: 100%;
-  padding: 20px;
   /* display: grid;
   box-sizing: border-box;
   grid-template-columns: 1.3fr 2fr; */
@@ -133,7 +132,6 @@ h1 {
   color: var(--cor--preto);
   border: none !important;
 }
-
 
 .link {
   position: relative;
@@ -226,8 +224,6 @@ h1 {
   margin-top: 0;
 }
 
-
-
 .merch h2 {
   font-weight: 600;
   font-size: 28px;
@@ -244,15 +240,15 @@ h1 {
   z-index: -1;
   font-size: 24px;
   padding: 80px 20px 20px;
-  transition: .5s;
+  transition: 0.5s;
   transform: translateY(-70px);
   display: flex;
-  background: #3B3B3B;
+  background: #3b3b3b;
   justify-content: center;
 }
 
 .card {
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
   width: 100%;
   max-width: 314px;
@@ -260,14 +256,13 @@ h1 {
 
 .card-hover img {
   position: relative;
-  transition: .5s;
+  transition: 0.5s;
   z-index: 10;
   margin: 0 auto;
   display: flex;
   max-width: 218px;
   height: 280px;
   object-fit: none;
-
 }
 
 .card-hover {
@@ -276,7 +271,7 @@ h1 {
   width: 100%;
   position: relative;
   max-width: 314px;
-  justify-content: center;
+  max-height: 360px;
 }
 
 .card-hover:hover p {
@@ -350,9 +345,6 @@ h1 {
   display: flex;
 }
 
-
-
-
 .recipes-box {
   margin-left: 43px;
   display: flex;
@@ -394,9 +386,7 @@ h1 {
   border-radius: 15px;
 }
 
-
 .recipes {
-
   position: relative;
 }
 
@@ -464,7 +454,6 @@ h1 {
   height: 166px;
 }
 
-
 footer {
   margin-bottom: 80px;
 }
@@ -491,6 +480,10 @@ footer {
     display: none;
   }
 
+  .menu {
+    padding: 1rem 1rem 4rem 1rem;
+  }
+
   .banner {
     gap: 0px;
     flex-direction: column-reverse;
@@ -500,18 +493,12 @@ footer {
     font-size: 3.6rem;
   }
 
-
-  .recipes-container,
-  .programs {
+  .recipes-container {
     flex-direction: column;
   }
 
   .box-packed img {
     display: none;
-  }
-
-  .recipes-container ul {
-    margin: 0 auto;
   }
 
   .recipes-box {
@@ -525,6 +512,19 @@ footer {
 
   .cards-merch {
     flex-direction: column;
+  }
+
+  .programs {
+    gap: 40px;
+    overflow-y: scroll;
+  }
+
+  .programs::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .recipes-box {
+    margin-left: 0;
   }
 
   /* .container h2, .container button{
