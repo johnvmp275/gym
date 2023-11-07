@@ -50,9 +50,6 @@ input::placeholder {
   -webkit-font-smoothing: antialiased;
 }
 
-.nav-container {
-}
-
 ul {
   list-style: none;
 }
@@ -303,6 +300,7 @@ h1 {
 }
 
 .gallery-photos {
+  max-width: 1339px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
