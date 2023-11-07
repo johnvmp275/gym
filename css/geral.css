@@ -32,6 +32,10 @@ input::placeholder {
   font-weight: 400;
 }
 
+.programs::-webkit-scrollbar, .cards-merch::-webkit-scrollbar  {
+  width: 0px;
+}
+
 .icon {
   width: 87px;
   cursor: pointer;
@@ -233,6 +237,10 @@ h1 {
 .cards-merch {
   display: flex;
   justify-content: space-between;
+}
+
+.cards-merch, .programs   {
+  overflow-x: scroll;
 }
 
 .card-hover p {
@@ -510,24 +518,19 @@ footer {
     row-gap: 40px;
   }
 
-  .cards-merch {
-    flex-direction: column;
-  }
-
-  .programs {
+  .cards-merch, .programs {
     gap: 40px;
-    overflow-y: scroll;
   }
 
-  .programs::-webkit-scrollbar {
-    width: 0px;
+  .card-hover p{
+    width: 314px;
   }
 
   .recipes-box {
     margin-left: 0;
   }
 
-  /* .container h2, .container button{
-    font-size: 18px;
-  } */
+  .btn_banner{
+    font-size: 17px;
+  }
 }
