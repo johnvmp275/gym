@@ -172,7 +172,7 @@ h1 {
 }
 
 .programs {
-  margin: 0 auto 80px;
+  margin: 80px auto ;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
@@ -274,7 +274,7 @@ h1 {
 }
 
 .card-hover {
-  margin: 0 auto;
+  margin: 15px auto;
   cursor: pointer;
   width: 100%;
   position: relative;

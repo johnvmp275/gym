@@ -87,15 +87,15 @@ export default function initLoadPage() {
         </div>
         <div class="card-hover">
             <img src="./img/camiseta.png" alt="">
-            <p>Bag</p>
+            <p>Shirt</p>
         </div>
         <div class="card-hover">
             <img src="./img/garrafa.png" alt="">
-            <p>Bag</p>
+            <p>Bottle</p>
         </div>
         <div class="card-hover">
             <img src="./img/camiseta.png" alt="">
-            <p>Bag</p>
+            <p>Shirt</p>
         </div>
 
     </div>
