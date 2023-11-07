@@ -153,8 +153,8 @@ export default function initLoadPage() {
         </div>
     </div>
 </section>
-<section class="merch-container container">
-    <div class="merch">
+<section class="recipes-section container">
+    <div class="recipes-header">
         <h2>///Recipes</h2> <button class="btn_banner btn_view" type="submit">View More Recipes</button>
     </div>
     <section class="recipes-container">
