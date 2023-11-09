@@ -304,6 +304,7 @@ h1 {
 }
 
 .gallery-photos {
+  max-width: 1339px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
