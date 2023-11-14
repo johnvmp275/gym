@@ -32,7 +32,8 @@ input::placeholder {
   font-weight: 400;
 }
 
-.programs::-webkit-scrollbar, .cards-merch::-webkit-scrollbar  {
+.programs::-webkit-scrollbar,
+.cards-merch::-webkit-scrollbar {
   width: 0px;
 }
 
@@ -59,7 +60,6 @@ ul {
   align-items: center;
   display: flex;
   padding: 4rem 1rem 4rem 1rem;
-
   background: var(--box--amarelo);
 }
 
@@ -76,6 +76,24 @@ ul {
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.1em;
+}
+
+@keyframes menuLeft {
+  from {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.menu-icon {
+  display: none;
+  width: 50px;
+  cursor: pointer;
 }
 
 h1 {
@@ -243,9 +261,9 @@ h1 {
   overflow-x: scroll;
 }
 
-.programs, .cards-merch {
+.programs,
+.cards-merch {
   scrollbar-width: none;
-
 }
 
 .card-hover p {
@@ -320,14 +338,13 @@ h1 {
   cursor: pointer;
   border-radius: 40px;
   position: relative;
-  border-radius: 40px;
 }
 
 .gallery-photos img {
   max-width: 400px;
   cursor: pointer;
   width: 100%;
-
+  border-radius: 40px;
 }
 
 .gallery-photos .hover_image:nth-child(1) {
@@ -536,6 +553,29 @@ footer {
 @media (max-width: 1200px) {
   .menu ul {
     display: none;
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    padding: 20px;
+    top: 186px;
+    background: var(--cor--amarelo);
+    animation: menuLeft .7s forwards;
+  }
+
+  .link::after {
+    background-color: var(--cor--preto);
+  }
+
+  .menu li a {
+    color: var(--cor--preto);
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-icon.ativo ~ .lista {
+    display: flex;
   }
 
   .menu {
@@ -625,5 +665,4 @@ footer {
   .gallery-photos .hover_image:nth-child(8) {
     grid-column: 3/6;
   }
-
 }
