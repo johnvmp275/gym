@@ -307,11 +307,12 @@ h1 {
 }
 
 .gallery-photos {
+  max-width: 1339px;
   align-items: center;
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(6, 200px);
-  grid-gap: 40px;
+  grid-gap: 30px;
 }
 
 .hover_image {
@@ -319,13 +320,14 @@ h1 {
   cursor: pointer;
   border-radius: 40px;
   position: relative;
-  background-size: cover;
+  border-radius: 40px;
 }
 
 .gallery-photos img {
-  width: 100%;
+  max-width: 400px;
   cursor: pointer;
-  border-radius: 40px;
+  width: 100%;
+
 }
 
 .gallery-photos .hover_image:nth-child(1) {
@@ -588,8 +590,8 @@ footer {
   }
 
   .gallery-photos {
-    gap: 30px;
-    grid-template-columns: repeat(5, 50px);
+    gap: 20px;
+    grid-template-columns: repeat(5, 15%);
   }
 
   .gallery-photos .hover_image:nth-child(1) {
