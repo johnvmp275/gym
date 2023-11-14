@@ -80,7 +80,7 @@ ul {
 
 @keyframes menuLeft {
   from {
-    transform: translateX(40px);
+    transform: translateX(-40px);
     opacity: 0;
   }
 
@@ -94,6 +94,7 @@ ul {
   display: none;
   width: 50px;
   cursor: pointer;
+  z-index: 10;
 }
 
 h1 {
@@ -557,7 +558,7 @@ footer {
     flex-direction: column;
     right: 0;
     padding: 20px;
-    top: 186px;
+    top: 187px;
     background: var(--cor--amarelo);
     animation: menuLeft .7s forwards;
   }
