@@ -1,9 +1,8 @@
 export default function initMenu() {
-  const menuToggle = document.querySelector(".menu-icon");
+  const menuToggle = document.querySelector('.menu-icon');
 
   function menuuu() {
-    menuToggle.classList.toggle("ativo");
-    console.log(menuToggle);
+    menuToggle.classList.toggle('ativo');
   }
 
   menuToggle.addEventListener('click', menuuu);

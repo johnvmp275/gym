@@ -1,12 +1,15 @@
+import initMenu from './menu.js';
+
 export default function initLoadPage() {
-  const gridContainer = document.querySelector(".grid-container");
-  const container = document.getElementById("container");
-  const homeLink = document.getElementById("homeLink");
-  const aboutLink = document.getElementById("aboutLink");
-  const programsLink = document.getElementById("programsLink");
-  const recipesLink = document.getElementById("recipesLink");
-  const storeLink = document.getElementById("storeLink");
-  const loader = document.querySelector(".loader");
+  const gridContainer = document.querySelector('.grid-container');
+  const container = document.getElementById('container');
+  const homeLink = document.getElementById('homeLink');
+  const aboutLink = document.getElementById('aboutLink');
+  const programsLink = document.getElementById('programsLink');
+  const recipesLink = document.getElementById('recipesLink');
+  const storeLink = document.getElementById('storeLink');
+  const loader = document.querySelector('.loader');
+  const menuToggle = document.querySelector('.menu-icon');
 
   // Função para carregar a página inicial
   function loadHomePage() {
@@ -244,44 +247,48 @@ export default function initLoadPage() {
 
   //
   function loaderTimer() {
-    gridContainer.style.display = "none";
-    loader.style.display = "flex";
+    gridContainer.style.display = 'none';
+    loader.style.display = 'flex';
+    menuToggle.classList.remove('ativo');
     setTimeout(() => {
       // colocar como display block aqui para que apareça
-      loader.style.display = "none";
-      gridContainer.style.display = "block";
+      loader.style.display = 'none';
+      gridContainer.style.display = 'block';
       //quando ele acabar ficara como display none para sair o loader
     }, 1700);
   }
 
   // Define eventos de clique para os links
-  homeLink.addEventListener("click", function (event) {
+  homeLink.addEventListener('click', function (event) {
     loaderTimer();
     event.preventDefault(); // Evita que o link redirecione
     loadHomePage();
   });
 
-  aboutLink.addEventListener("click", function (event) {
+  aboutLink.addEventListener('click', function (event) {
     loaderTimer();
     event.preventDefault();
+
     loadAboutPage();
   });
 
-  programsLink.addEventListener("click", function (event) {
+  programsLink.addEventListener('click', function (event) {
     loaderTimer();
     event.preventDefault();
     loadProgramsPage();
   });
 
-  recipesLink.addEventListener("click", function (event) {
+  recipesLink.addEventListener('click', function (event) {
     loaderTimer();
     event.preventDefault();
     loadRecipesPage();
   });
 
-  storeLink.addEventListener("click", function (event) {
+  storeLink.addEventListener('click', function (event) {
     loaderTimer();
     event.preventDefault();
     loadStorePage();
   });
+
+  initMenu();
 }
