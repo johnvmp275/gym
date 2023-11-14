@@ -588,6 +588,7 @@ footer {
   }
 
   .gallery-photos {
+    gap: 30px;
     grid-template-columns: repeat(5, 50px);
   }
 
