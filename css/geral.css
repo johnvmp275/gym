@@ -323,11 +323,10 @@ h1 {
   width: 100%;
   max-width: 1339px;
   align-items: center;
-margin: 0 auto;
+  margin: 0 auto;
   justify-content: space-between;
   display: grid;
   grid-template-columns: repeat(6, 200px);
-  grid-gap: 10px;
 }
 
 .hover_image {
@@ -338,6 +337,7 @@ margin: 0 auto;
 }
 
 .gallery-photos img {
+  margin-bottom: 20px;
   max-width: 100%;
   cursor: pointer;
   width: 100%;
