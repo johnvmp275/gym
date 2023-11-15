@@ -15,13 +15,6 @@ body {
   padding: 20px;
   color: var(--cor--branco);
   background: var(--cor--preto);
-}
-
-p,
-a,
-h1,
-h2,
-span {
   font-family: var(--font--family);
 }
 
@@ -561,7 +554,7 @@ footer {
     flex-direction: column;
     right: 0;
     padding: 20px;
-    top: 187px;
+    top: 140px;
     background: var(--cor--amarelo);
     animation: menuLeft .7s forwards;
   }
