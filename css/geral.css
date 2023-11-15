@@ -259,6 +259,7 @@ h1 {
 
 .cards-merch,
 .programs {
+  gap: 40px;
   overflow-x: scroll;
 }
 
@@ -326,12 +327,14 @@ h1 {
 }
 
 .gallery-photos {
+  width: 100%;
   max-width: 1339px;
   align-items: center;
-  justify-content: center;
+margin: 0 auto;
+  justify-content: space-between;
   display: grid;
   grid-template-columns: repeat(6, 200px);
-  grid-gap: 30px;
+  grid-gap: 10px;
 }
 
 .hover_image {
@@ -342,7 +345,7 @@ h1 {
 }
 
 .gallery-photos img {
-  max-width: 400px;
+  max-width: 100%;
   cursor: pointer;
   width: 100%;
   border-radius: 40px;
@@ -575,12 +578,12 @@ footer {
     display: block;
   }
 
-  .menu-icon.ativo ~ .lista {
+  .menu-icon.ativo~.lista {
     display: flex;
   }
 
   .menu {
-    padding: 1rem 1rem 4rem 1rem;
+    padding: 1rem;
   }
 
   .banner {
@@ -609,11 +612,6 @@ footer {
     row-gap: 40px;
   }
 
-  .cards-merch,
-  .programs {
-    gap: 40px;
-  }
-
   .card-hover p {
     width: 314px;
   }
@@ -624,10 +622,6 @@ footer {
 
   .btn_banner {
     font-size: 14px;
-  }
-
-  .gallery-photos img {
-    max-width: 400px;
   }
 
   .gallery-photos {
