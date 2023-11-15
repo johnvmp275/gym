@@ -7,7 +7,7 @@
     <title>Gym</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="img/gold_s_gym_2008-logo-5B7A8ECB44-seeklogo 1.png" type="image/x-icon">
-    <script> document.documentElement.className = 'js'; </script>
+    <script> document.documentElement.className = "js"; </script>
 </head>
 
 <body>
@@ -30,18 +30,19 @@
         <!-- fazer o loader fora para dar display none na div container -->
         <main id="container" class="grid-section">
 
-          
+
         </main>
         <footer class="copy">
             <section class="contact container">
                 <h2 class="">///Contact Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
                     magna aliqua. Ut enim ad minim veniam</p>
                 <section class="contact-container container">
                     <div class="box-contact">
-                        <input type="text" placeholder="Enter your name">
-                        <input type="email" placeholder="xyz@gmail.com">
-                        <input type="text" placeholder="Enter your message...">
+                        <input type="text" placeholder="Enter your name" id="to_name">
+                        <input type="email" placeholder="xyz@gmail.com" id="to">
+                        <button class="btn_banner" type="submit" onclick="sendMail();">Send Message</button>
                     </div>
                     <img src="./img/sushil.png">
                 </section>
@@ -49,7 +50,8 @@
             <a><img class="icon icon-copy" src="img/gold_s_gym_2008-logo-5B7A8ECB44-seeklogo 1.png" alt=""
                     srcset=""></a>
             <!-- codigo acima para ser escrito em breve -->
-            <p class="copy-autoral">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            <p class="copy-autoral">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt
                 utfsfbhsrherfhsbfshb. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et</p>
         </footer>
@@ -62,6 +64,26 @@
         </div>
     </div>
     <script type="module" src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        function sendMail() {
+            (function () {
+                emailjs.init("_Y1mTQWGGhEIPqIDL")
+            })();
+            var params = {
+                to_name: document.querySelector("#to_name").value,
+                to: document.querySelector("#to").value,
+            };
+            var serviceID = "service_bsixetb";
+            var templateID = "template_son9njg"
+
+            emailjs.send(serviceID, templateID, params)
+                .then(res => {
+                    alert("your email has just been sent")
+                })
+                .catch();
+        }
+    </script>
 </body>
 
 </html>

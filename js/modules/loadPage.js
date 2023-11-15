@@ -1,19 +1,19 @@
 import initMenu from './menu.js';
 
 export default function initLoadPage() {
-  const gridContainer = document.querySelector('.grid-container');
-  const container = document.getElementById('container');
-  const homeLink = document.getElementById('homeLink');
-  const aboutLink = document.getElementById('aboutLink');
-  const programsLink = document.getElementById('programsLink');
-  const recipesLink = document.getElementById('recipesLink');
-  const storeLink = document.getElementById('storeLink');
-  const loader = document.querySelector('.loader');
-  const menuToggle = document.querySelector('.menu-icon');
+    const gridContainer = document.querySelector('.grid-container');
+    const container = document.getElementById('container');
+    const homeLink = document.getElementById('homeLink');
+    const aboutLink = document.getElementById('aboutLink');
+    const programsLink = document.getElementById('programsLink');
+    const recipesLink = document.getElementById('recipesLink');
+    const storeLink = document.getElementById('storeLink');
+    const loader = document.querySelector('.loader');
+    const menuToggle = document.querySelector('.menu-icon');
 
-  // Função para carregar a página inicial
-  function loadHomePage() {
-    container.innerHTML = `
+    // Função para carregar a página inicial
+    function loadHomePage() {
+        container.innerHTML = `
     <section class="banner">
     <div>
         <p class="title">make your
@@ -213,82 +213,82 @@ export default function initLoadPage() {
     </section>
 </section>
   `;
-  }
+    }
 
-  // Função para carregar a página de contato
-  function loadAboutPage() {
-    container.innerHTML = `
+    // Função para carregar a página de contato
+    function loadAboutPage() {
+        container.innerHTML = `
        <h1>loadAboutPager </h1>
     `;
-  }
+    }
 
-  function loadProgramsPage() {
-    container.innerHTML = `
+    function loadProgramsPage() {
+        container.innerHTML = `
        <h1>loadProgramsPage</h1>
     `;
-  }
+    }
 
-  function loadRecipesPage() {
-    container.innerHTML = `
+    function loadRecipesPage() {
+        container.innerHTML = `
        <h1>loadRecipesPage</h1>
     `;
-  }
+    }
 
-  function loadStorePage() {
-    container.innerHTML = `
+    function loadStorePage() {
+        container.innerHTML = `
        <h1>loadStorePage</h1>
     `;
-  }
+    }
 
-  //simula um loader de 5s para poder apresentar o site
-  loaderTimer();
-  // Carrega a página inicial quando a aplicação inicia
-  loadHomePage();
-
-  //
-  function loaderTimer() {
-    gridContainer.style.display = 'none';
-    loader.style.display = 'flex';
-    menuToggle.classList.remove('ativo');
-    setTimeout(() => {
-      // colocar como display block aqui para que apareça
-      loader.style.display = 'none';
-      gridContainer.style.display = 'block';
-      //quando ele acabar ficara como display none para sair o loader
-    }, 1700);
-  }
-
-  // Define eventos de clique para os links
-  homeLink.addEventListener('click', function (event) {
+    //simula um loader de 5s para poder apresentar o site
     loaderTimer();
-    event.preventDefault(); // Evita que o link redirecione
+    // Carrega a página inicial quando a aplicação inicia
     loadHomePage();
-  });
 
-  aboutLink.addEventListener('click', function (event) {
-    loaderTimer();
-    event.preventDefault();
+    //
+    function loaderTimer() {
+        gridContainer.style.display = 'none';
+        loader.style.display = 'flex';
+        menuToggle.classList.remove('ativo');
+        setTimeout(() => {
+            // colocar como display block aqui para que apareça
+            loader.style.display = 'none';
+            gridContainer.style.display = 'block';
+            //quando ele acabar ficara como display none para sair o loader
+        }, 1700);
+    }
 
-    loadAboutPage();
-  });
+    // Define eventos de clique para os links
+    homeLink.addEventListener('click', function (event) {
+        loaderTimer();
+        event.preventDefault(); // Evita que o link redirecione
+        loadHomePage();
+    });
 
-  programsLink.addEventListener('click', function (event) {
-    loaderTimer();
-    event.preventDefault();
-    loadProgramsPage();
-  });
+    aboutLink.addEventListener('click', function (event) {
+        loaderTimer();
+        event.preventDefault();
 
-  recipesLink.addEventListener('click', function (event) {
-    loaderTimer();
-    event.preventDefault();
-    loadRecipesPage();
-  });
+        loadAboutPage();
+    });
 
-  storeLink.addEventListener('click', function (event) {
-    loaderTimer();
-    event.preventDefault();
-    loadStorePage();
-  });
+    programsLink.addEventListener('click', function (event) {
+        loaderTimer();
+        event.preventDefault();
+        loadProgramsPage();
+    });
 
-  initMenu();
+    recipesLink.addEventListener('click', function (event) {
+        loaderTimer();
+        event.preventDefault();
+        loadRecipesPage();
+    });
+
+    storeLink.addEventListener('click', function (event) {
+        loaderTimer();
+        event.preventDefault();
+        loadStorePage();
+    });
+
+    initMenu();
 }
