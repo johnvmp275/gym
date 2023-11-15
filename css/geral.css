@@ -379,8 +379,8 @@ h1 {
 .hover_image p {
   position: absolute;
   display: flex;
-  top: 50%; /* Move a div para 50% de distância do topo */
-  left: 50%; /* Move a div para 50% de distância da esquerda */
+  top: 50%; 
+  left: 50%;
   transform: translate(-50%, -50%);
   justify-content: center;
   width: 100%;
