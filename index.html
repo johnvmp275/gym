@@ -79,6 +79,8 @@
             emailjs.send(serviceID, templateID, params)
                 .then(function (r) {
                     alert("Your email has just been sent");
+                    document.querySelector("#to_name").value = "";
+                    document.querySelector("#to").value = "";
                 }, function (error) {
                     alert("There was an error sending your email");
                 });
